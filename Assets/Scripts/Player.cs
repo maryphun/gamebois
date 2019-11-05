@@ -30,10 +30,6 @@ public class Player : Bolt.EntityBehaviour<ICubeStateCustom>
         if (Input.GetKey(KeyCode.S)) { movement.z -= 1; }
         if (Input.GetKey(KeyCode.A)) { movement.x -= 1; }
         if (Input.GetKey(KeyCode.D)) { movement.x += 1; }
-        if (Input.GetKey(KeyCode.W)) { movement.z += speed; }
-        if (Input.GetKey(KeyCode.S)) { movement.z -= speed; }
-        if (Input.GetKey(KeyCode.A)) { movement.x -= speed; }
-        if (Input.GetKey(KeyCode.D)) { movement.x += speed; }
 
         Ray cameraRay = camera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);

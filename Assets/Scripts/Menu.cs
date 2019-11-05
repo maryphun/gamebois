@@ -24,10 +24,16 @@ public class Menu : Bolt.GlobalEventListener
     //    GUILayout.EndArea();
     //}
 
+    int ssssss = 0;
+
     public void StartServer()
     {
-        // サーバーを立てる
-        BoltLauncher.StartServer();
+        if (ssssss == 0)
+        {
+            ssssss += 1;
+            // サーバーを立てる
+            BoltLauncher.StartServer();
+        }
     }
 
     public void StartClient()
@@ -35,7 +41,6 @@ public class Menu : Bolt.GlobalEventListener
         // 他のサーバーに入る
         BoltLauncher.StartClient();
     }
-
 
     public override void BoltStartDone()
     {
