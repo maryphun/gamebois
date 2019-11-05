@@ -59,14 +59,16 @@ public class Player : Bolt.EntityBehaviour<ICubeStateCustom>
         animator.SetBool("Run", movement != Vector3.zero);
         animator.SetBool("Shot", state.Shot);
 
+        
         if (state.Shot)
         {
-            var boltevent = ShotHappened.Create(entity);
+            var boltevent = ShotHappened.Create(Bolt.GlobalTargets.Everyone);
             boltevent.FromWho = ServerCallback.playerNumber;
             boltevent.Position = transform.position;
             boltevent.Angle = transform.rotation;
             boltevent.Send();
+
+            //Instantiate((GameObject)Resources.Load("Bullet"), transform.position, transform.rotation);
         }
     }
-
 }

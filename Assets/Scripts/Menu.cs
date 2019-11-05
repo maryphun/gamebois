@@ -7,8 +7,8 @@ public class Menu : Bolt.GlobalEventListener
 {
     public void StartServer()
     {
-        // サーバーを立てる
-        BoltLauncher.StartServer();
+            // サーバーを立てる
+            BoltLauncher.StartServer();
     }
 
     public void StartClient()
@@ -16,6 +16,7 @@ public class Menu : Bolt.GlobalEventListener
         // 他のサーバーに入る
         BoltLauncher.StartClient();
     }
+    
     
     public override void BoltStartDone()
     {
