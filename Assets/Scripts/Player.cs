@@ -47,6 +47,12 @@ public class Player : Bolt.EntityBehaviour<ICubeStateCustom>
 
             //向かせる
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
+
+            if (state.Shot)
+            {
+                var kaboom = Instantiate((GameObject)Resources.Load("SmallExplosionEffect"), new Vector3(pointToLook.x, transform.position.y, pointToLook.z), transform.rotation);
+                Destroy(kaboom, 3.8f);
+            }
         }
 
         //座標更新
@@ -68,7 +74,10 @@ public class Player : Bolt.EntityBehaviour<ICubeStateCustom>
             boltevent.Angle = transform.rotation;
             boltevent.Send();
 
-            //Instantiate((GameObject)Resources.Load("Bullet"), transform.position, transform.rotation);
+
+            ShockWaveEffect d1 = GetComponent<ShockWaveEffect>();
+            d1.StartEffect(Vector3.zero);
+           
         }
     }
 }

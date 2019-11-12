@@ -27,3 +27,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+ProjectSettings/QualitySettings.asset
+.vs/gamebois/v15/Server/sqlite3/storage.ide
+.vs/gamebois/v15/Server/sqlite3/storage.ide-shm
+.vs/gamebois/v15/Server/sqlite3/storage.ide-wal

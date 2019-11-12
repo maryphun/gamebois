@@ -7,8 +7,8 @@ public class Menu : Bolt.GlobalEventListener
 {
     public void StartServer()
     {
-            // サーバーを立てる
-            BoltLauncher.StartServer();
+        // サーバーを立てる
+        BoltLauncher.StartServer();
     }
 
     public void StartClient()

@@ -347,7 +347,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+<<<<<<< HEAD
 --- !u!114 &166
+=======
+--- !u!114 &172
+>>>>>>> e5dedcde6c790728e60094edec4b02494e3160eb
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

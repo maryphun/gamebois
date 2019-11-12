@@ -5957,12 +5957,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 2004160122}
   - component: {fileID: 2004160121}
   - component: {fileID: 2004160120}
   m_Layer: 5
   m_Name: WhiteSlider4
   m_TagString: Untagged
+=======
+  - component: {fileID: 1482173773}
+  - component: {fileID: 1482173772}
+  - component: {fileID: 1482173771}
+  - component: {fileID: 1482173774}
+  - component: {fileID: 1482173775}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+>>>>>>> e5dedcde6c790728e60094edec4b02494e3160eb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6047,12 +6058,48 @@ RectTransform:
   m_Father: {fileID: 1344105636}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2040050696
+=======
+--- !u!114 &1482173774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482173770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3f59ba1541db3a4bb0d092d31111be8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1482173775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482173770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1bc47acc4725cd4ea6b00288371127c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0.5
+  posX: 0.5
+  posY: 0.5
+  duration: 1
+  shine: 0.5
+  distortion: 0.1
+  width: 0.5
+  material: {fileID: 2100000, guid: 44b1e794e0960814681bee9fe8ab24c5, type: 2}
+--- !u!1 &1550162957
+>>>>>>> e5dedcde6c790728e60094edec4b02494e3160eb
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
