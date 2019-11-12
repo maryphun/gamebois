@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : Bolt.EntityBehaviour<ICubeStateCustom>
 {
-    public float moveSpeed;
+    public float moveSpeed = 5;
     private Camera cam;
     private Animator animator;
     //private CharacterController characterController;
@@ -64,7 +64,7 @@ public class Player : Bolt.EntityBehaviour<ICubeStateCustom>
         {
             var boltevent = ShotHappened.Create(Bolt.GlobalTargets.Everyone);
             boltevent.FromWho = ServerCallback.playerNumber;
-            boltevent.Position = transform.position;
+            boltevent.Position = new Vector3(transform.position.x, transform.position.y + ((GetComponent<Collider>().bounds.size.y * 2 / 3)), transform.position.z);
             boltevent.Angle = transform.rotation;
             boltevent.Send();
 
